@@ -1,0 +1,19 @@
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\Pluto Offline Launcher.exe.config
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\Pluto Offline Launcher.exe
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\Pluto Offline Launcher.pdb
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto Offline Launcher.csprojAssemblyReference.cache
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto_Offline_Launcher.Form1.resources
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto_Offline_Launcher.Properties.Resources.resources
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto Offline Launcher.csproj.GenerateResource.cache
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto Offline Launcher.csproj.CoreCompileInputs.cache
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto Offline Launcher.exe
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto Offline Launcher.pdb
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\EntityFramework.dll
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\EntityFramework.SqlServer.dll
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\EntityFramework.xml
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\EntityFramework.SqlServer.xml
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto Offline Launcher.csproj.CopyComplete
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\Pluto Offline Launcher.exe.manifest
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\bin\Debug\Pluto Offline Launcher.application
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto Offline Launcher.exe.manifest
+F:\Documents\Visual Studio Projects\Pluto Offline Launcher\Pluto Offline Launcher\obj\Debug\Pluto Offline Launcher.application
