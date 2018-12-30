@@ -122,6 +122,10 @@ namespace Pluto_Offline_Launcher
         }
         public void createunfile()
         {
+            if (!Directory.Exists(gameloc + "\\t6r\\player"))
+            {
+                Directory.CreateDirectory(gameloc + "\\t6r\\player");
+            }
             StreamWriter File = new StreamWriter(gameloc +"\\t6r\\player\\user.name");
             File.Close();
         }
