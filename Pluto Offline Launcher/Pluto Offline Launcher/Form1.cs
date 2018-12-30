@@ -56,6 +56,8 @@ namespace Pluto_Offline_Launcher
                 {
                     MessageBox.Show("user.name not found in '" + gameloc + "\\t6r\\player'", "Error: File Not Found.",
                       MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    
+                    
                 }
                
             }
@@ -118,6 +120,12 @@ namespace Pluto_Offline_Launcher
             }
            
         }
+        public void createunfile()
+        {
+            StreamWriter File = new StreamWriter(gameloc +"\\t6r\\player\\user.name");
+            File.Close();
+        }
+
 
 
 
@@ -247,7 +255,18 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         private void btn_Setusername_Click(object sender, EventArgs e)
         {
-            setusername();
+            try
+            {
+                string un2 = File.ReadAllText(gameloc + "\\t6r\\player\\user.name");
+                setusername();
+            }
+            catch
+            {
+                createunfile();
+                setusername();
+
+            }
+           
         }
 
         public bool usernameExists()
