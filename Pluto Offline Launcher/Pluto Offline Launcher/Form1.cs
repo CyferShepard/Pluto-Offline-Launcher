@@ -54,14 +54,28 @@ namespace Pluto_Offline_Launcher
             {
                 if(!gameloc.Equals("Locate Game Executable"))
                 {
-                    MessageBox.Show("user.name not found in '" + gameloc + "\\t6r\\player'", "Error: File Not Found.",
-                      MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   // MessageBox.Show("user.name not found in '" + gameloc + "\\t6r\\player'", "Error: File Not Found.",
+                     // MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    createusername();
                     
                     
                 }
                
             }
 
+        }
+
+        public void createusername()
+        {
+            if (!Directory.Exists(loc + "\\t6r\\player"))
+            {
+                Directory.CreateDirectory(loc + "\\t6r\\player");
+            }
+            StreamWriter File = new StreamWriter(loc + "\\t6r\\player\\user.name");
+
+            File.Write("Player");
+            File.Close();
+            getusername();
         }
         public void setusername()
         {

@@ -211,7 +211,7 @@ namespace Pluto_Offline_Launcher
             this.linkLabel2.Size = new System.Drawing.Size(209, 16);
             this.linkLabel2.TabIndex = 17;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Created By CyferShepard v1.0.2";
+            this.linkLabel2.Text = "Created By CyferShepard v1.0.3";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // Form1
