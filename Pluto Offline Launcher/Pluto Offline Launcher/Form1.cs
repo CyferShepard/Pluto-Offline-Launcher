@@ -67,11 +67,11 @@ namespace Pluto_Offline_Launcher
 
         public void createusername()
         {
-            if (!Directory.Exists(loc + "\\t6r\\player"))
+            if (!Directory.Exists(gameloc + "\\t6r\\player"))
             {
-                Directory.CreateDirectory(loc + "\\t6r\\player");
+                Directory.CreateDirectory(gameloc + "\\t6r\\player");
             }
-            StreamWriter File = new StreamWriter(loc + "\\t6r\\player\\user.name");
+            StreamWriter File = new StreamWriter(gameloc + "\\t6r\\player\\user.name");
 
             File.Write("Player");
             File.Close();
@@ -107,33 +107,45 @@ namespace Pluto_Offline_Launcher
 
         public void createconfig()
         {
-          StreamWriter File = new StreamWriter(loc + "Config\\path.config");
-
-            File.Write("Locate Game Executable");
-            File.Close();
-        }
-        public void firstruncheck()
-        {
-            try
-            {
-                string path = File.ReadAllText(loc + "Config\\exists.config");
-
-            }
-            catch
+            if (!File.Exists(loc + "Config\\path.config"))
             {
                 if (!Directory.Exists(loc + "Config"))
-                {
-                    Directory.CreateDirectory(loc + "Config");
-                }
-                StreamWriter Filesw = new StreamWriter(loc + "Config\\exists.config");
+                 {
+                              Directory.CreateDirectory(loc + "Config");
+                 }
+               StreamWriter nFile = new StreamWriter(loc + "Config\\path.config");
 
-                Filesw.Write("True");
-                Filesw.Close();
-                createconfig();
-
+                nFile.Write("Locate Game Executable");
+                nFile.Close();
             }
            
         }
+        //public void firstruncheck()
+        //{
+        //    if (File.Exists(loc + "t6rmp.exe"))
+        //    {
+
+        //    }
+        //        try
+        //    {
+        //        string path = File.ReadAllText(loc + "Config\\exists.config");
+
+        //    }
+        //    catch
+        //    {
+        //        if (!Directory.Exists(loc + "Config"))
+        //        {
+        //            Directory.CreateDirectory(loc + "Config");
+        //        }
+        //        StreamWriter Filesw = new StreamWriter(loc + "Config\\exists.config");
+
+        //        Filesw.Write("True");
+        //        Filesw.Close();
+        //        createconfig();
+
+        //    }
+           
+        //}
         public void createunfile()
         {
             if (!Directory.Exists(gameloc + "\\t6r\\player"))
@@ -142,6 +154,21 @@ namespace Pluto_Offline_Launcher
             }
             StreamWriter File = new StreamWriter(gameloc +"\\t6r\\player\\user.name");
             File.Close();
+        }
+
+        public bool autolocate()
+        {
+            bool found = false;
+            if (File.Exists(loc+ "t6rmp.exe"))
+                {
+               
+                lbl_Location.Text = loc;
+                found = true;
+            }
+            return found;
+
+             
+
         }
 
 
@@ -206,15 +233,30 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
            
 
         }
+        public bool usernameExists()
+        {
+            bool e = false;
+            if (!getusernameString().Equals("") && !getusernameString().Equals(null))
+            {
+                e = true;
+            }
+            return e;
+        }
 
         public Form1()
         {
             InitializeComponent();
-            firstruncheck();
+            
+            createconfig();
+            if (!autolocate())
+            {
+                getpath();
+                storepathinmem();
+            }
 
 
-            getpath();
-            storepathinmem();
+           
+            
             getusername();
             checkgame();
         }
@@ -287,15 +329,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
            
         }
 
-        public bool usernameExists()
-        {
-            bool e = false;
-            if(!getusernameString().Equals("") && !getusernameString().Equals(null))
-            {
-                e = true;
-            }
-            return e;
-        }
+    
         private void btn_MP_Click(object sender, EventArgs e)
         {
             if(usernameExists())

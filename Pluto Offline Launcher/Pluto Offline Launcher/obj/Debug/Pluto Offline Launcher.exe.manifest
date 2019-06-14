@@ -4,7 +4,7 @@
   <description asmv2:iconFile="app.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Pluto Offline Launcher" version="1.0.3.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Pluto Offline Launcher" version="1.0.4.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="Pluto Offline Launcher.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -68,13 +68,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pluto Offline Launcher.exe" size="2084800">
-      <assemblyIdentity name="Pluto Offline Launcher" version="1.0.3.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Pluto Offline Launcher" version="1.0.4.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jK+2Fe/gCwFY/bS/keSMlx9sNS2p4G7eXdy0AmYMyl8=</dsig:DigestValue>
+        <dsig:DigestValue>KcKBJ4Xg6JWylupKIzSRsvzmRsTqpCdAZhYXL3ngkT4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
