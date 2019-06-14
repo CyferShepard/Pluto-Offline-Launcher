@@ -38,8 +38,10 @@ namespace Pluto_Offline_Launcher
           
             try
             {
-           
-                string un = File.ReadAllText(gameloc + "\\t6r\\player\\user.name");
+
+ //               MessageBox.Show(gameloc + "t6r\\player\\user.name", "LOC",
+ //MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string un = File.ReadAllText(gameloc + "t6r\\player\\user.name");
                 if (!un.Equals(""))
                     {
                     txt_Username.Text = un;
@@ -67,11 +69,11 @@ namespace Pluto_Offline_Launcher
 
         public void createusername()
         {
-            if (!Directory.Exists(gameloc + "\\t6r\\player"))
+            if (!Directory.Exists(gameloc + "t6r\\player"))
             {
-                Directory.CreateDirectory(gameloc + "\\t6r\\player");
+                Directory.CreateDirectory(gameloc + "t6r\\player");
             }
-            StreamWriter File = new StreamWriter(gameloc + "\\t6r\\player\\user.name");
+            StreamWriter File = new StreamWriter(gameloc + "t6r\\player\\user.name");
 
             File.Write("Player");
             File.Close();
@@ -85,7 +87,7 @@ namespace Pluto_Offline_Launcher
             {
                 if (!txt_Username.Text.Equals(""))
                 {
-                    File.WriteAllText(gameloc + "\\t6r\\player\\user.name", txt_Username.Text);
+                    File.WriteAllText(gameloc + "t6r\\player\\user.name", txt_Username.Text);
                     MessageBox.Show("Username Saved.", "Success",
    MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
@@ -148,11 +150,11 @@ namespace Pluto_Offline_Launcher
         //}
         public void createunfile()
         {
-            if (!Directory.Exists(gameloc + "\\t6r\\player"))
+            if (!Directory.Exists(gameloc + "t6r\\player"))
             {
-                Directory.CreateDirectory(gameloc + "\\t6r\\player");
+                Directory.CreateDirectory(gameloc + "t6r\\player");
             }
-            StreamWriter File = new StreamWriter(gameloc +"\\t6r\\player\\user.name");
+            StreamWriter File = new StreamWriter(gameloc +"t6r\\player\\user.name");
             File.Close();
         }
 
@@ -161,9 +163,11 @@ namespace Pluto_Offline_Launcher
             bool found = false;
             if (File.Exists(loc+ "t6rmp.exe"))
                 {
-               
                 lbl_Location.Text = loc;
+
                 found = true;
+                storepathinmem();
+                setpath(loc);
             }
             return found;
 
@@ -176,16 +180,15 @@ namespace Pluto_Offline_Launcher
 
         public void checkgame()
         {
-            if(!gameloc.Equals("Locate Game Executable"))
+            if (File.Exists(loc + "t6rmp.exe"))
             {
                 btn_MP.Enabled = true;
+            }
+            if (File.Exists(loc + "t6rzm.exe"))
+            {
                 btn_ZM.Enabled = true;
             }
-            else
-            {
-                btn_MP.Enabled = false;
-                btn_ZM.Enabled = false;
-            }
+          
         }
 
 
@@ -317,7 +320,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
         {
             try
             {
-                string un2 = File.ReadAllText(gameloc + "\\t6r\\player\\user.name");
+                string un2 = File.ReadAllText(gameloc + "t6r\\player\\user.name");
                 setusername();
             }
             catch
@@ -334,7 +337,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
         {
             if(usernameExists())
             {
-                Process.Start(gameloc + "\\t6rmp.exe");
+                Process.Start(gameloc + "t6rmp.exe");
             }
             else
             {
@@ -348,7 +351,9 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
         {
             if (usernameExists())
             {
-                Process.Start(gameloc + "\\t6rzm.exe");
+
+                Process.Start(gameloc + "t6rzm.exe");
+
             }
             else
             {

@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pluto Offline Launcher.exe" size="2084800">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pluto Offline Launcher.exe" size="2083776">
       <assemblyIdentity name="Pluto Offline Launcher" version="1.0.4.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KcKBJ4Xg6JWylupKIzSRsvzmRsTqpCdAZhYXL3ngkT4=</dsig:DigestValue>
+        <dsig:DigestValue>09CTzEBU5pdkGgT8ZwCqfgrTSurcgBnPc+r1ntUFPgo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
