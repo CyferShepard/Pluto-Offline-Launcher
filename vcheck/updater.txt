@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+    <version>1.0.5.0</version>
+    <url>https://github.com/CyferShepard/Pluto-Offline-Launcher/raw/master/Test.zip</url>
+    <changelog>https://github.com/CyferShepard/Pluto-Offline-Launcher</changelog>
+    <mandatory>false</mandatory>
+</item>
