@@ -3,5 +3,5 @@
     <version>1.0.5.1</version>
     <url>https://github.com/CyferShepard/Pluto-Offline-Launcher/raw/master/Test.zip</url>
     <changelog>https://raw.githubusercontent.com/CyferShepard/Pluto-Offline-Launcher/master/README.md</changelog>
-    <mandatory>True</mandatory>
+    <mandatory>False</mandatory>
 </item>
