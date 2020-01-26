@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
     <version>1.0.5.1</version>
-    <url>https://github.com/CyferShepard/Pluto-Offline-Launcher/raw/master/Releases/PlutoniumLauncher%201.0.5.1/Plutonium%20Launcher%20v1.0.5.1.zip</url>
+    <url>https://github.com/CyferShepard/Pluto-Offline-Launcher/raw/master/Releases/Plutonium%20Launcher%201.0.5.1/Plutonium%20Launcher%20v1.0.5.1.zip</url>
     <changelog>https://raw.githubusercontent.com/CyferShepard/Pluto-Offline-Launcher/master/README.md</changelog>
     <mandatory>False</mandatory>
 </item>
