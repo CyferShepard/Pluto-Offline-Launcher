@@ -7,7 +7,7 @@
     <ProjectGuid>{21A15FCC-0240-4458-AA8F-1888A2078854}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Pluto_Offline_Launcher</RootNamespace>
-    <AssemblyName>Pluto Offline Launcher</AssemblyName>
+    <AssemblyName>Plutonium Launcher</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
