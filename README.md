@@ -7,6 +7,7 @@ V1.0.5.1 <a href="https://github.com/CyferShepard/Pluto-Offline-Launcher/raw/mas
 
 # Changelog
 # 1.0.5.1
+Rebrand from Pluto Offline Launcher to Plutonium launcher.
 Bug Fixes
 # 1.0.5.0
 Added Update Checker.
