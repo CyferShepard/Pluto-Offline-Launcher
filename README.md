@@ -1,4 +1,4 @@
-# Pluto Offline Launcher
+# Pluto T6 Launcher
 Launcher to use with Plutonium T6 MOD.
 Simplified Launcher to run the Plutonium T6 mod for Black Ops 2.
 Locate the t6r executable and then set your username to begin playing.
