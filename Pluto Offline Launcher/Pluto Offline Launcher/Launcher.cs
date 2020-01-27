@@ -232,7 +232,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
 
-        private void AutoUpdater_ApplicationExitEvent()
+        private void file_cleanup()
         {
             try
             {
@@ -241,7 +241,23 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
                 {
                     // If file found, delete it    
                     File.Delete(Path.Combine(loc, "ZipExtractor.exe"));
+                    //File.Delete(Path.Combine(loc, "ZipExtractor.log"));
+                   // File.Delete(Path.Combine(loc, "Pluto Offline Launcher.exe"));
+                    Debug.WriteLine("File deleted.");
+                }
+                if (File.Exists(Path.Combine(loc, "ZipExtractor.log")))
+                {
+                    // If file found, delete it    
+                   // File.Delete(Path.Combine(loc, "ZipExtractor.exe"));
                     File.Delete(Path.Combine(loc, "ZipExtractor.log"));
+                   // File.Delete(Path.Combine(loc, "Pluto Offline Launcher.exe"));
+                    Debug.WriteLine("File deleted.");
+                }
+                if (File.Exists(Path.Combine(loc, "Pluto Offline Launcher.exe")))
+                {
+                    // If file found, delete it    
+                   // File.Delete(Path.Combine(loc, "ZipExtractor.exe"));
+                   // File.Delete(Path.Combine(loc, "ZipExtractor.log"));
                     File.Delete(Path.Combine(loc, "Pluto Offline Launcher.exe"));
                     Debug.WriteLine("File deleted.");
                 }
@@ -258,6 +274,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
         public Launcher()
         {
             InitializeComponent();
+            file_cleanup();
             update();
             updatelabel();
 
@@ -295,7 +312,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
         {
             AutoUpdater.ReportErrors = false;
             AutoUpdater.DownloadPath = Environment.CurrentDirectory;
-            AutoUpdater.ApplicationExitEvent += AutoUpdater_ApplicationExitEvent;
+            //AutoUpdater.ApplicationExitEvent += AutoUpdater_ApplicationExitEvent;
             AutoUpdater.ShowSkipButton = false;
             AutoUpdater.RunUpdateAsAdmin = true;
             AutoUpdater.Start("https://raw.githubusercontent.com/CyferShepard/Pluto-Offline-Launcher/master/vcheck/updater.xml");
