@@ -288,6 +288,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             getusername();
             checkgame();
+            linkLabel2.Text = "Created By CyferShepard v"+ System.Reflection.Assembly.GetEntryAssembly().GetName().Version;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
